@@ -12,17 +12,22 @@
       .ui-widget {font-size:80%;}
     </style>
   </head>
-    <div id="accordion">
-      <h2><a href="#">客家諺語</a></h2>
-      <div>客家諺語</div>
-      <h2><a href="#">客家歇後語</a></h2>
-      <div>客家歇後語</div>
-      <h2><a href="#">客語唐詩與昔時賢文</a></h2>
-      <div>客語唐詩與昔時賢文</div>
+    <div id="tabs">
+      <ul>
+        <li><a href="#tab1">首頁</a></li>
+        <li><a href="tab2.htm">個人簡介</a></li>
+        <li><a href="tab3.htm">教學</a></li>
+        <li><a href="tab4.htm">研究</a></li>
+        <li><a href="tab5.htm">著作發表</a></li>
+        <li><a href="tab6.htm">論文指導</a></li>
+      </ul>
+      <div id="tab1">
+        <p>首頁</p>
+      </div>
     </div>
     <script>
       $(function(){
-        $("#accordion").accordion();
+        $("#tabs").tabs();
         });
     </script>
   </body>
