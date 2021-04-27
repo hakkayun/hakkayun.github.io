@@ -10,21 +10,42 @@
     <style>
       body {font-family: Arial, Helvetica, sans-serif;}
       .ui-widget {font-size:90%;}
+      #tabs {width:900px;}
     </style>
   </head>
-    <div id="tabs">
-      <ul>
-        <li><a href="home.htm">首頁</a></li>
-        <li><a href="profile.htm">簡歷</a></li>
-        <li><a href="teaching.htm">教學</a></li>
-        <li><a href="research.htm">研究</a></li>
-        <li><a href="publishing.htm">著作發表</a></li>
-        <li><a href="instruction.htm">論文指導</a></li>
-      </ul>
-    </div>
+  <body>
+    <table align="center" border="0" width="900" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="center"><img src="images/logo.jpg"></td>
+      </tr>
+      <tr>
+        <td>
+          <div id="tabs">
+            <ul>
+              <li><a href="home.htm">首頁</a></li>
+              <li><a href="profile.htm">簡歷</a></li>
+              <li><a href="teaching.htm">教學</a></li>
+              <li><a href="research.htm">研究</a></li>
+              <li><a href="publishing.htm">著作發表</a></li>
+              <li><a href="instruction.htm">論文指導</a></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+    </table>
     <script>
       $(function(){
+        /*$( "#logo" ).position({
+          my: "top center",
+          at: "top center",
+          of: "#container"
+          });*/
         $("#tabs").tabs();
+        /*$( "#tabs" ).position({
+          my: "center center",
+          at: "center center",
+          of: "#container"
+          });*/
         });
     </script>
   </body>
